@@ -1,0 +1,77 @@
+GET http://localhost:8000/products/ HTTP/1.1
+###
+GET http://localhost:8000/products/1/ HTTP/1.1
+
+###
+PUT http://localhost:8000/products/4/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5MTgwMjg4LCJpYXQiOjE3NDkxNzk5ODgsImp0aSI6IjRmOTRlOTA2ZDMwOTQ5OTdiNmMzYjNlZThkNzNhOTQ4IiwidXNlcl9pZCI6MX0.hOz2qMQ7Kg5vEeQpay_WP4ssqGfDQCFh4zjyM3ElcJQ
+
+{
+  "name": "Updated Product",
+  "price": 29.99,
+  "stock": 50,
+  "description": "An updated product description"
+}
+
+###
+DELETE  http://localhost:8000/products/3/ HTTP/1.1
+
+###
+POST  http://localhost:8000/products/1/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "New Product",
+  "price": 19.99,
+  "stock": 100,
+  "description": "A new product description"
+}
+
+###
+POST  http://localhost:8000/api/token/refresh/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0OTAxNjI1NSwiaWF0IjoxNzQ4OTI5ODU1LCJqdGkiOiIzNzFiNDhlZjRlN2I0NGMyYTQwMDZjMzM2OTg1ZmU3NCIsInVzZXJfaWQiOjF9.UKPyo9fEaX_naehcqpAO2zIm_OWjYysDCKHz2RmGwVM"
+}
+
+
+###
+POST   http://localhost:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "username":"Vikalp",
+  "password":"Vikalp2004@"
+}
+
+
+
+###
+POST  http://localhost:8000/products/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5MDA5NDExLCJpYXQiOjE3NDkwMDkxMTEsImp0aSI6IjE3NmQ2NDFlYzBiYTRmNDE5ODk0OWY4NDBiNDc5ZDE4IiwidXNlcl9pZCI6MX0.TtlEA51izLnDemT0p6uQ9Ju9qAVkYihy1TF8mTQEQoo
+
+{
+  "name": "New Product",
+  "price": 19.99,
+  "stock": 100,
+  "description": "A new product description"
+}
+### 
+POST  http://localhost:8000/products/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4OTIxMzgzLCJpYXQiOjE3NDg5MjEwODMsImp0aSI6ImM5NDI1OTYyYzkyZTRjOThhM2M2YTgyNmFlN2M3YmU2IiwidXNlcl9pZCI6MX0.LlbWv56FPawnoLxUwlq-7OManJFNAiQlsNu4q77pzH0
+
+{
+  "name": "New Product",
+  "price": 19.99,
+  "stock": 100,
+  "description": "A new product description"
+}
+
+
+###
+GET http://localhost:8000/user-orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4OTIzNTA2LCJpYXQiOjE3NDg5MjMyMDYsImp0aSI6Ijg5MGQ1NmY2YTI0NDQxMGZhMDU4ZDEzNjJmMjU4ZjFkIiwidXNlcl9pZCI6MX0.t1lQurzrdB73o9_SMomHixaC9ha-FFYLEM-FxKrL3t8
