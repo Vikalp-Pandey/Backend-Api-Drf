@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   title: E-Commerce API
   version: 1.0.0
-  description: A simple Product & Order API for an e-commerce application
+  description: A simple Product & Order API that helps us learn Django REST Framework
 paths:
   /api/token/:
     post:
@@ -113,7 +113,6 @@ paths:
       security:
       - jwtAuth: []
       - cookieAuth: []
-      - {}
       responses:
         '201':
           content:
@@ -168,7 +167,6 @@ paths:
       security:
       - jwtAuth: []
       - cookieAuth: []
-      - {}
       responses:
         '200':
           content:
@@ -200,7 +198,6 @@ paths:
       security:
       - jwtAuth: []
       - cookieAuth: []
-      - {}
       responses:
         '200':
           content:
@@ -221,7 +218,6 @@ paths:
       security:
       - jwtAuth: []
       - cookieAuth: []
-      - {}
       responses:
         '204':
           description: No response body

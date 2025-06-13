@@ -17,8 +17,6 @@ class UserOrderTestCase(TestCase):
         user = User.objects.get(username='user2')
         self.client.force_login(user)
         response = self.client.get(reverse('user-orders'))
-        #reverse('user-orders') is the URL name for the user order list endpoint.It is used to retrieve the orders for the authenticated user.
-        # Ensure the response status is OK
 
         assert response.status_code == status.HTTP_200_OK
         orders = response.json()
