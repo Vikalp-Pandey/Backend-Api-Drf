@@ -44,7 +44,7 @@ MIDDLEWARE = [
     'silk.middleware.SilkyMiddleware',
 ]
 
-ROOT_URLCONF = 'drf_course.urls'
+ROOT_URLCONF = 'drf_project.urls'
 
 TEMPLATES = [
     {
@@ -62,7 +62,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'drf_course.wsgi.application'
+WSGI_APPLICATION = 'drf_project.wsgi.application'
 
 
 # Database
