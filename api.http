@@ -22,7 +22,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 
 POST http://localhost:8000/products/ HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5Mjc2Mzg0LCJpYXQiOjE3NDkyNzYwODQsImp0aSI6ImRjZWRjZDBiMzQwNzQ1Y2VhODQyZjE5YjYyMTRhM2Y4IiwidXNlcl9pZCI6MX0.IIkCXLKLZu1TrtAmn_EkTTZHuXRZjc7tA3xzu9plF84
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUwMjE3OTEzLCJpYXQiOjE3NTAyMTc2MTMsImp0aSI6IjQ2MDA3YjIzNTM0MDRiZjVhMjYwODUxZTNmMmU4NzVkIiwidXNlcl9pZCI6MX0.7jwqWuwWznZ3iOcjMOH7y_tjijZuMqIlnqTdQ9R3w1E
 
 {
 	"name": "Television",
@@ -46,4 +46,23 @@ Content-Type: application/json
 
 {
 	"refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyODQwOTAzMSwiaWF0IjoxNzI4MzIyNjMxLCJqdGkiOiI3ZjdmZDExNDhjZTg0Njk5YTdiYmY2OWZlNmRiMzczYSIsInVzZXJfaWQiOjF9.KRzvCrbOC_XbxFqjGWf9iTf4lhlnWAdddfCjp7dPrFM"
+}
+###
+POST http://localhost:8000/orders/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUwMjIxOTI1LCJpYXQiOjE3NTAyMjE2MjUsImp0aSI6IjJhMjdhMjc4MzBhNTRhOWY5ZmEyZjdmMWJhNTI2ODllIiwidXNlcl9pZCI6MX0.-nJdwltW26Fu0kDTA__1MJd2Ux0OpsptoaGQs9xauDs
+
+{
+	"user":2,
+	"status": "Pending",
+	"items": [
+		{
+				"product": 2,
+				"quantity": 2
+		},
+		{
+				"product": 3,
+				"quantity": 1
+		}
+	]	
 }

@@ -18,4 +18,5 @@ router.register("orders",views.OrderViewset,basename="orders")
 router.register("user-orders",views.UserOrderViewset,basename="user-orders")
 #router.register("user-orders",views.UserOrderViewset,basename="user-orders")
 urlpatterns += router.urls
+
 #     path('orders/', views.OrderViewset.as_view({'get': 'list', 'post': 'create'})),
